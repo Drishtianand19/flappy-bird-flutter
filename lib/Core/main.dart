@@ -1,0 +1,51 @@
+// ignore_for_file: prefer_const_constructors, unnecessary_import, unused_local_variable
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:hive/hive.dart';
+import '../Global/constant.dart';
+import '../Layouts/Pages/page_start_screen.dart';
+import '../Layouts/Pages/welcome_screen.dart';
+import 'package:audioplayers/audioplayers.dart';
+
+void main() async{
+  await Hive.initFlutter();
+  var box = await Hive.openBox('user');
+  runApp(
+    MaterialApp(
+      home: MyApp(),
+      debugShowCheckedModeBanner: false,
+    ),
+  );
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+
+  @override
+  void dispose(){
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+    return WelcomeScreen();
+  }
+}
