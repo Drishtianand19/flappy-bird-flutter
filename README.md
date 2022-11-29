@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Flappy-Bird
 ![banner](https://user-images.githubusercontent.com/73842931/203234278-72dc4c28-0542-475e-8b0a-a64993b7f79b.png)
 
@@ -44,3 +45,6 @@ $ flutter pub get
 ----
 
 This game is the culmination of the University-sponsored [Next Academy's](https://next-eg.com/) flutter programming instruction.
+=======
+# flappy-bird-flutter
+>>>>>>> 62432c90faf9261fc1bf11d9f4eea6c1e93ebc88
