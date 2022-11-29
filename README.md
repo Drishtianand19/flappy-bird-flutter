@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Flappy-Bird
 ![banner](https://user-images.githubusercontent.com/73842931/203234278-72dc4c28-0542-475e-8b0a-a64993b7f79b.png)
 
